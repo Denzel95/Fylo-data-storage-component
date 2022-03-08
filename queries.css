@@ -1,0 +1,51 @@
+@media (min-width: 62.5em) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    height: 100vh;
+    background: var(--Very-Dark-Blue) url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: 27%;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .space {
+    width: 53rem;
+    height: 15rem;
+  }
+
+  .text {
+    display: block;
+    width: 80%;
+    text-align: start;
+  }
+
+  .capacity {
+    left: 142px;
+    top: -136px;
+    border-bottom-right-radius: 0;
+    position: relative;
+  }
+
+  .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    top: 14px;
+    right: 48px;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+  }
+}
