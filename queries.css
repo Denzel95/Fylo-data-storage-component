@@ -1,3 +1,7 @@
+:root {
+  --Pale-Blue: hsl(243, 100%, 93%);
+}
+
 @media (min-width: 62.5em) {
   main {
     display: flex;
@@ -9,7 +13,7 @@
     height: 100vh;
     background: var(--Very-Dark-Blue) url("./images/bg-desktop.png");
     background-repeat: no-repeat;
-    background-position-y: 27%;
+    background-size: cover;
   }
 
   .main-container {
@@ -21,6 +25,7 @@
   .space {
     width: 53rem;
     height: 15rem;
+    padding-top: 2rem;
   }
 
   .text {
@@ -30,22 +35,24 @@
   }
 
   .capacity {
-    left: 142px;
-    top: -136px;
+    position: relative;
+    left: 0;
+    top: 0;
     border-bottom-right-radius: 0;
     position: relative;
+    transform: translate(75%, -275%);
+    padding: 1rem;
   }
 
-  .triangle {
-    display: block;
-    width: 0;
-    height: 0;
-    top: 14px;
-    right: 48px;
-    border-right: 10px solid #fff;
-    border-top: 10px solid #fff;
+  .capacity:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    border-right: 10px solid var(--Pale-Blue);
+    border-top: 10px solid var(--Pale-Blue);
     border-left: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    position: absolute;
+    transform: translateY(265%);
   }
 }
