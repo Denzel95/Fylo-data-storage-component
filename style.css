@@ -93,15 +93,19 @@ main {
   width: 80%;
   border-radius: 10px;
   display: flex;
+  align-items: center;
+  padding-left: 3px;
 }
 
 .gradient {
   width: 70%;
-  height: 1.7rem;
+  height: 1.3rem;
   border-radius: 10px;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   display: flex;
-  position: relative;
+
+  justify-content: flex-end;
+  padding-right: 1px;
 }
 
 .circle {
@@ -109,10 +113,6 @@ main {
   height: 1.2rem;
   border-radius: 100%;
   background-color: var(--Pale-Blue);
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 2px;
 }
 
 .text {
